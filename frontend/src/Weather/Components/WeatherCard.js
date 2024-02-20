@@ -7,12 +7,11 @@ import { WindAngleIcon } from "../Icons/WindAngleIcon";
 import { WindIcon } from "../Icons/WindIcon";
 
 const WeatherCard = (props) => {
-  console.log(props);
   return (
     <>
       {props.weatherData && (
         <section
-          className="flex md:w-3/4 w-full  gap-4 justify-between items-end pb-5 pr-5 rounded-[30px]"
+          className="flex md:w-3/4 w-full gap-4 justify-between items-end pb-5 pr-5 rounded-[30px]"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <article className="flex flex-col flex-1">

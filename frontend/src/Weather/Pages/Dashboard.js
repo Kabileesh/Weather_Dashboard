@@ -38,13 +38,14 @@ const Dashboard = () => {
     <>
       {weatherData && (
         <div
-          className="h-screen w-screen p-8"
+          className="h-screen w-screen md:w-full md:p-16 p-4"
           style={{
             backgroundImage: `url('${
               weatherImage[weatherData.weather[0].description]
             }')`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
+            height: "100%"
           }}
         >
           <header
@@ -53,7 +54,7 @@ const Dashboard = () => {
           >
             <div className="container mx-auto">
               <h1 className="text-3xl font-bold">Weather Dashboard</h1>
-              <p className="mt-2">Stay informed about the weather conditions</p>
+              <p className="mt-5">Stay informed about the weather conditions</p>
             </div>
           </header>
           <div className="flex flex-col gap-8 justify-between lg:flex-row w-full px-6 py-1 items-center mt-24">
