@@ -27,17 +27,19 @@ const WeatherCard = (props) => {
                 <div className="flex flex-row items-center gap-4">
                   <SunriseIcon />
                   <p className="text-md font-medium">
-                    {new Date(
-                      props.weatherData.sys.sunrise * 1000
-                    ).toLocaleTimeString()}
+                    {props.weatherData.sys.sunrise ?
+                      new Date(
+                        props.weatherData.sys.sunrise * 1000
+                      ).toLocaleTimeString() : "-"}
                   </p>
                 </div>
                 <div className="flex flex-row items-center gap-4 text-white">
                   <SunsetIcon />
                   <p className="text-md font-medium">
-                    {new Date(
-                      props.weatherData.sys.sunset * 1000
-                    ).toLocaleTimeString()}
+                  {props.weatherData.sys.sunset ?
+                      new Date(
+                        props.weatherData.sys.sunset * 1000
+                      ).toLocaleTimeString() : "-"}
                   </p>
                 </div>
               </div>

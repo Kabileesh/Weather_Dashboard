@@ -1,5 +1,5 @@
 const ClockWidget = (props) => {
-  const currentDate = new Date();
+  const currentDate = props.date;
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = [
     "Jan",
